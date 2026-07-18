@@ -84,6 +84,7 @@ Slack Notification
 PromptOps/
 ├── app/           # Application core
 │   ├── api/       # API endpoints
+│   ├── core/      # Preferences, Settings, auth
 │   ├── services/  # Business logic
 │   ├── database/  # Database layer
 │   ├── models/    # Data models

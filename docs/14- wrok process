@@ -1,0 +1,82 @@
+┌──────────────────────────────────────┐
+│ 1단계. AI Evaluation Engine (Backend) ← 지금 진행 중
+└──────────────────────────────────────┘
+
+Golden Set 관리
+Prompt 관리
+Prompt 실행
+OpenAI API 호출
+Evaluation
+Score 계산
+Report 생성
+REST API 제공 (FastAPI)
+
+           │
+           ▼
+
+┌──────────────────────────────────────┐
+│ 2단계. Dashboard (Frontend)
+└──────────────────────────────────────┘
+
+Prompt 선택
+Golden Set 선택
+실행
+결과 확인
+Prompt 비교
+
+(React)
+
+           │
+           ▼
+
+┌──────────────────────────────────────┐
+│ 3단계. n8n Workflow
+└──────────────────────────────────────┘
+
+파일 업로드
+↓
+FastAPI 호출
+↓
+평가 실행
+↓
+Slack 알림
+↓
+Gmail 전송
+↓
+Google Drive 저장
+
+(n8n은 오케스트레이션 담당)
+
+           │
+           ▼
+
+┌──────────────────────────────────────┐
+│ 4단계. 계산 엔진 (Evaluation Metrics)
+└──────────────────────────────────────┘
+
+Exact Match
+Semantic Similarity
+LLM Judge
+JSON Validation
+Precision
+Recall
+Latency
+Cost
+Pass Rate
+
+(점수 계산 로직)
+
+           │
+           ▼
+
+┌──────────────────────────────────────┐
+│ 5단계. Production 기능
+└──────────────────────────────────────┘
+
+DB 저장
+Prompt Version 관리
+실험 이력
+비용 추적
+로그
+Docker
+CI/CD

@@ -1,0 +1,5 @@
+{
+    "name": "customer-support",
+    "version": "v1",
+    "system_prompt": "You are a helpful customer support assistant."
+}
